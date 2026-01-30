@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+/* =================== App.css =================== */
+
+.app {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+.header {
   text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #2563eb, #0f172a);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header h1 {
+  font-size: 2.8rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links a {
+  margin: 0 10px;
+  color: #93c5fd;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.resume-btn {
+  background: #2563eb;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 40px 15%;
+}
+
+.section h2 {
+  color: #60a5fa;
+  margin-bottom: 20px;
+}
+
+.skills span {
+  background: #1e293b;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .card {
-  padding: 2em;
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.read-the-docs {
-  color: #888;
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 20px;
+  }
 }
